@@ -1,3 +1,19 @@
 <h1>
   {{title}}
 </h1>
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+	
+    <nav>
+      <a>Navigation:</a>
+      <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['/about']">About</a></li>
+      </ul>
+    </nav>
+  <router-outlet></router-outlet>
+  </div>

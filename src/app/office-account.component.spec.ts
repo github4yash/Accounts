@@ -15,8 +15,8 @@ describe('App: OfficeAccount', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'office-account works!\'',
+  it('should have as title \'Application works!\'',
       inject([OfficeAccountAppComponent], (app: OfficeAccountAppComponent) => {
-    expect(app.title).toEqual('office-account works!');
+    expect(app.title).toEqual('My Application!');
   }));
 });
