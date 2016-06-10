@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { AboutComponent } from './+about';
 import { Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
+import { Hero } from './hero';
+import { HeroDetailComponent } from './hero-detail';
 
-export class Hero {
-  id: number;
-  name: string;
-}
 
 @Component({
   moduleId: module.id,
   selector: 'office-account-app',
   templateUrl: 'office-account.component.html',
   styleUrls: ['office-account.component.css'],
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ROUTER_DIRECTIVES, HeroDetailComponent],
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
